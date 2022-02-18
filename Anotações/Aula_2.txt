@@ -1,0 +1,90 @@
+===========================================================
+===========================================================
+	Aula 2 - Propriedades e Princípios de projeto
+===========================================================
+===========================================================
+Design (Geral) - Arte
+Design (Desenvolvimento) -> Etapa de projeto da engenharia de software
+	- Tecnologia (Linguagem; framework; IDE)
+
+# Propriedades:
+	- Problema dos sitesmas: Decomposição (Dividir o problema em partes)
+	- Forma de resolver: Abstraindo (Pegar a essência do problema)
+	- As propriedades estão em nível um nível mais génerico (táticas de programação);
+	-------------------------------------------------------------------------------------------------------------------
+	1. Integridade Conceitural:
+		+ Foco na Padronização;
+		+ Se aplica tanto ao design quanto ao código;
+			* Carnel case - getId
+			* Snake case -	get_id
+		+ O padrão que você começou deve ser do começo ao fim;
+		+ Propriedade proposta por "Frederick Brooks".
+			* Exemplo ruim: Uso de framework de diferentes versões;
+	-------------------------------------------------------------------------------------------------------------------
+	2. Ocultamento de informação: 
+		+ O encapsulamento de decisões de projeto que são sujeitas a mudanças.
+			* Exemplo: Estrutura de dados; Algoritmo específico;
+		+ Vantagens:
+			* Desenvolvimento em paralelo (redução do tempo de implementação do sistema)
+			* Flexibilidade a mudanças (Possibilita a alterar/adicionar componentes ou estruturas do sistema)
+			* Facilidade de entendimento (Possibilita o foco em determinada classe ou função)
+			* Utilização de visibilidade (Dá estabilidade aos componentes - nomes / atributos)
+	-------------------------------------------------------------------------------------------------------------------
+	3. Coesão: 
+		+ Um código que possui somente uma responsabilidade.
+		+ A classe ou estrutura deve possuir um objetivo a ser comprido.
+		+ Vantagens:
+			* Facilita a implementação, entendimento e manutenção da classe / função;
+			* Possibilita a alocação de um único responsável pela manutenção;
+			* Faciita reusar e testar a estrutura;
+	-------------------------------------------------------------------------------------------------------------------
+	4. Acoplamento: 
+		+ Uma classe que depende de várias. (Deve ser reduzido ao máximo)
+		+ Tipos:
+			* O bom acomplamento (Estrutural): Usa métodos públicos de outra classe e essa outra classe apresenta uma estrutura estável. 
+			* O mau acomplamento (Evolutivo / Lógico): Quando uma classe "A" está acoplado em "B" e esse "B" não é estável. 
+				Ou no caso de compartilhar váriaveis ou estruturas de dados.
+		+ Estratégias:
+			* MINIMIZAR o acoplamento entre classe. (Minimizar não é eliminar.)
+	-------------------------------------------------------------------------------------------------------------------
+
+# Princípios:
+	- Recomendações que mantém as propriedades;
+	- Os principios estão em nível operacional (código);
+	--------------------------------------------------------------------------------------------------------------------
+	1. Resposabilidade única (Single Responsibility Principle):
+		+ Foca na propriedade de coesão;
+		+ A classe deve possuir uma única responsabilidade;
+			* Responsabilidade = Motivo para modificar uma classe."
+	--------------------------------------------------------------------------------------------------------------------
+	2. Segregação de interfaces (Interface Segregation Principle):
+		+ Cada Interface tenha sentido próprio;
+		+ Várias interfaces eficazes é melhor que um grande pai;
+		+ Evitar que a interface tenha métodos ineficazes;
+			* Especifique a interface e seus métodos para cada classe cliente / filho;
+	--------------------------------------------------------------------------------------------------------------------
+	3. Inversão de dependências (Dependency Inversion Principle)
+		+ "Prefira Interfaces a Classes."
+		+ Interfaces são mais estáveis que classes;
+	--------------------------------------------------------------------------------------------------------------------
+	4. Composição invés de Herança:
+		+ Heranças = Forte acoplamento entre subclasses e superclasses;
+		+ Heranças profundas = Um risco gigantes de ao alterar algo se tornar um efeito dominó;
+		+ Vantagens:
+			* Diferente da herança, a composição não permite que suas subclasses tenham acessos a suas inforações;
+			* Padrão decorador - Padrão existente para realizar a substituição;
+			* As linguagens Go e Rust não usam mais herança;
+	--------------------------------------------------------------------------------------------------------------------
+	5. Demeter:
+		+ Objetivo: Evitar problemas de encapsulamento em projetos de sistemas OO.
+		+ Lógica: Um método deve invocar apenas os seguintes outros métodos:
+			* De sua própria classe;
+			* De objetos passados por parâmetro;
+			* De objetos criados pelo próprio método;
+			* Dos atributos da classe método;
+
+	--------------------------------------------------------------------------------------------------------------------
+	6. Aberto / Fechado (Open Closed Principle):
+
+	--------------------------------------------------------------------------------------------------------------------
+	7. Substituição de Liskov (Liskov Substitution Principle):
