@@ -1,0 +1,54 @@
+===========================================================
+===========================================================
+	Aula 1 - Apresentação dos conceitos básicos
+===========================================================
+===========================================================
+Introdução:
+# Função da arquitetura:
+	- Profissional: Arquiteto de Software;
+
+	- Definição de arquitetura (superficialmente):
+		+ É um roteiro / plano / modelagem de como será construido o projeto;
+		+ É sobre as coisas importantes (Dos requisitos aos testes);
+
+	- Variáveis:
+		+ Orçamento;
+		+ Conhecimento técnico da equipe;
+		+ Nível de complexidade do projeto;
+		+ Intervalo de tempo;
+		+ Quantidade de cooperadores;
+		+ Exigência da estrutura física;
+
+	- "a ARQUITETURA é um fruto dos seus contextos."
+		+ Data de aplicação;
+		+ Tecnologia disponíveis na época;
+		+ Pensamentos e valores da época;
+	
+	- Mapa mental:
+		+ Anti - Patterns:
+		+ Visualização:
+		+ Aplicação arquitetural (Princípios):
+		+ Entregas continuas (Delivery Continuos):
+		+ Soft skills:
+			* Desenvolvimento de pipelines;
+			* DevOps -> Integração desenvolvedores - Gerentes operacionais;
+		+ Arquitetura evolucionaria (Mudanças):
+		+ Caracteres Arquiteturais (Valores -> Não funcionais):
+			* Segurança;
+			* Desempenho;
+			* Disponibilidade;
+			* Flexibilidade;
+		+ Metricas :
+		+ Integração arquitetural:
+		+ Estilos -> Modelos Arquiteturais:
+			* Generico
+				. Distribuido
+					1. Pipes and Filters
+					2. ESB - SOA
+					3. Microserviços
+					4. Baseado em serviços
+					5. Serveless
+				. Monolitico
+			* Dominio especifico
+				. Arquitetura baseada em espaço
+				. LMAX
